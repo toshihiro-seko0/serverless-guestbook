@@ -83,6 +83,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="guestbook.js"></script>
+  <script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
+<script>
+  window.loadWatsonAssistantChat({
+    integrationID: "f209d692-11d9-49e6-b5f9-35d308c3a7ee", // The ID of this integration.
+    region: "us-south" // The region your integration is hosted in.
+  }).then(function(instance){
+    instance.render();
+  });
+</script>
 </body>
 
 </html>
