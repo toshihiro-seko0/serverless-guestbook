@@ -98,6 +98,8 @@
     // Select the button element from the page.
     const button = document.querySelector('.chatLauncher');
 
+    instance.updateCSSVariables({ '$focus': 'red' });
+    
     // Add the event listener to open your Web Chat.
     button.addEventListener('click', () => {
       instance.openWindow();
