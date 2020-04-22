@@ -94,6 +94,10 @@
     region: "us-south",
     showLauncher: false
   };
+  const styleOptions = {
+     botAvatarInitials: 'BF',
+     userAvatarInitials: 'WC'
+  };
   window.loadWatsonAssistantChat(options).then(function(instance){
     // Select the button element from the page.
     const button = document.querySelector('.chatLauncher');
